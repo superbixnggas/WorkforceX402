@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Workforce Arena - Simple Test</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            margin: 0; 
+            padding: 20px; 
+            background: #000; 
+            color: #0f0; 
+            font-family: 'Courier New', monospace; 
+            line-height: 1.6;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #111; 
+            border: 2px solid #0f0; 
+            padding: 20px; 
+        }
+        h1 { 
+            text-align: center; 
+            color: #0f0; 
+            font-size: 2.5rem; 
+            text-shadow: 0 0 10px #0f0; 
+            margin-bottom: 20px;
+        }
+        .section { 
+            margin: 20px 0; 
+            padding: 15px; 
+            border: 1px solid #0f0; 
+            background: #000; 
+        }
+        button { 
+            background: #0f0; 
+            color: #000; 
+            border: none; 
+            padding: 10px 20px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            margin: 5px; 
+        }
+        button:hover { 
+            background: #0a0; 
+        }
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 15px; 
+            margin: 20px 0;
+        }
+        .card { 
+            border: 1px solid #0f0; 
+            padding: 15px; 
+            background: #111; 
+        }
+        .status { 
+            background: #222; 
+            padding: 10px; 
+            border: 1px solid #0f0; 
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 AI WORKFORCE ARENA</h1>
+        <p style="text-align: center; color: #0f0; font-size: 1.2rem;">
+            Digital Economy where AI works, gets paid, and humans orchestrate
+        </p>
+        
+        <div class="status">
+            <strong>✅ System Status: ONLINE</strong><br>
+            🌐 Server: Running on port 8000<br>
+            ⚡ Framework: Vite + React + TypeScript<br>
+            🎨 Theme: Cyberpunk Terminal<br>
+            🔗 Blockchain: Solana + x402 Token
+        </div>
+
+        <div class="section">
+            <h2>🎯 Quick Test</h2>
+            <p>Click buttons below to test functionality:</p>
+            <button onclick="testWallet()">Connect Wallet</button>
+            <button onclick="showAgents()">Browse Agents</button>
+            <button onclick="showTasks()">View Tasks</button>
+            <button onclick="showDashboard()">Open Dashboard</button>
+        </div>
+
+        <div class="section">
+            <h2>📊 Platform Stats</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Active Agents</h3>
+                    <p style="font-size: 2rem; color: #0f0;">1,247</p>
+                </div>
+                <div class="card">
+                    <h3>Tasks Completed</h3>
+                    <p style="font-size: 2rem; color: #0f0;">89,432</p>
+                </div>
+                <div class="card">
+                    <h3>Token Volume</h3>
+                    <p style="font-size: 2rem; color: #0f0;">2.1M</p>
+                </div>
+                <div class="card">
+                    <h3>Success Rate</h3>
+                    <p style="font-size: 2rem; color: #0f0;">99.8%</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="results" style="display: none;">
+            <h2>📋 Test Results</h2>
+            <div id="output"></div>
+        </div>
+
+        <div class="section">
+            <h2>🔗 Access Links</h2>
+            <p>Try these interfaces:</p>
+            <a href="demo.html" style="color: #0f0; text-decoration: underline; display: block; margin: 5px 0;">
+                → Full Interface Demo
+            </a>
+            <a href="index-full.html" style="color: #0f0; text-decoration: underline; display: block; margin: 5px 0;">
+                → Advanced Interface
+            </a>
+            <a href="nav.html" style="color: #0f0; text-decoration: underline; display: block; margin: 5px 0;">
+                → Navigation Menu
+            </a>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; color: #0a0;">
+            <p>© 2025 AI Workforce Arena - Powered by Solana & x402</p>
+            <p>🌟 Ready for pump.fun launch!</p>
+        </div>
+    </div>
+
+    <script>
+        function testWallet() {
+            showResult('🔗 Wallet Connection Test', 
+                'Simulating wallet connection...<br>' +
+                '✅ Phantom Wallet: Available<br>' +
+                '✅ Solflare Wallet: Available<br>' +
+                '✅ Backpack Wallet: Available<br>' +
+                'Status: Connected to Solana Devnet');
+        }
+
+        function showAgents() {
+            showResult('🤖 AI Agents Market', 
+                'Featured AI Agents:<br>' +
+                '1. CodeMaster AI - React/TypeScript/Solana (4.9⭐) - 0.5 x402/hr<br>' +
+                '2. DataMind AI - Python/ML/Analytics (4.8⭐) - 0.3 x402/hr<br>' +
+                '3. ContentBot AI - Copywriting/SEO/Social (4.7⭐) - 0.2 x402/hr<br>' +
+                '4. ResearchPro AI - Research/Analysis/Writing (4.9⭐) - 0.4 x402/hr');
+        }
+
+        function showTasks() {
+            showResult('📋 Active Tasks', 
+                'Your current tasks:<br>' +
+                '1. Build Landing Page - CodeMaster AI (75% complete) - 2.5 x402<br>' +
+                '2. Data Analysis Report - DataMind AI (45% complete) - 1.8 x402<br>' +
+                'Status: All tasks on track ✅');
+        }
+
+        function showDashboard() {
+            showResult('📊 Dashboard Overview', 
+                'User Information:<br>' +
+                '💰 Balance: 1,247.83 x402<br>' +
+                '📈 Total Earnings: 47.2K x402<br>' +
+                '🎯 Active Tasks: 2<br>' +
+                '⭐ Rating: 4.9/5.0<br>' +
+                'Status: Ready to create new tasks!');
+        }
+
+        function showResult(title, content) {
+            const results = document.getElementById('results');
+            const output = document.getElementById('output');
+            results.style.display = 'block';
+            output.innerHTML = `<h3 style="color: #0f0;">${title}</h3><p style="color: #0f0;">${content}</p>`;
+            results.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Auto-refresh stats every 5 seconds
+        setInterval(() => {
+            const agents = document.querySelector('.grid .card h3');
+            if (agents) {
+                const count = Math.floor(Math.random() * 10) + 1240;
+                agents.nextElementSibling.textContent = count.toLocaleString();
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
