@@ -1,0 +1,110 @@
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="120" fill="transparent"/>
+  
+  <!-- Left Icon: Professional Shield with X -->
+  <g transform="translate(25, 25)">
+    <!-- Shield shape -->
+    <path d="M25 5 L45 15 L45 35 Q45 50 25 55 Q5 50 5 35 L5 15 Z" 
+          fill="url(#shieldGradient)" stroke="url(#shieldStroke)" stroke-width="1.5" opacity="0.9"/>
+    
+    <!-- X mark inside shield -->
+    <g stroke="white" stroke-width="2">
+      <line x1="20" y1="25" x2="30" y2="35"/>
+      <line x1="30" y1="25" x2="20" y2="35"/>
+    </g>
+    
+    <!-- Small 402 below -->
+    <text x="25" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" 
+          fill="white" opacity="0.8">402</text>
+    
+    <!-- Decorative circuit lines around shield -->
+    <g stroke="#6A409A" stroke-width="1" opacity="0.6">
+      <line x1="50" y1="20" x2="60" y2="15"/>
+      <circle cx="60" cy="15" r="2" fill="#8B5CF6"/>
+      <line x1="60" y1="15" x2="70" y2="20"/>
+      <line x1="0" y1="30" x2="-10" y2="25"/>
+      <circle cx="-10" cy="25" r="2" fill="#C084FC"/>
+      <line x1="50" y1="40" x2="60" y2="45"/>
+      <circle cx="60" cy="45" r="2" fill="#E879F9"/>
+    </g>
+  </g>
+  
+  <!-- Main Text Block -->
+  <g transform="translate(110, 35)">
+    <!-- WORKFORCE -->
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="34" font-weight="bold" 
+          fill="url(#corporateGradient)" letter-spacing="1px">
+      WORKFORCE
+    </text>
+    
+    <!-- Divider line -->
+    <rect x="0" y="30" width="200" height="1" fill="url(#dividerGradient)" rx="0.5"/>
+    
+    <!-- X402 -->
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="26" font-weight="bold" 
+          fill="url(#x402CorporateGradient)" letter-spacing="1.5px">
+      X402
+    </text>
+    
+    <!-- Status indicator -->
+    <g transform="translate(210, 45)">
+      <circle cx="0" cy="0" r="3" fill="#10B981" opacity="0.8"/>
+      <circle cx="6" cy="0" r="2" fill="#F59E0B" opacity="0.7"/>
+      <circle cx="11" cy="0" r="1.5" fill="#EF4444" opacity="0.6"/>
+    </g>
+    
+    <!-- Tagline -->
+    <text x="0" y="70" font-family="Arial, sans-serif" font-size="12" 
+          fill="#64748B" letter-spacing="0.5px">
+      WORKFORCE OPTIMIZATION & INTELLIGENCE PLATFORM
+    </text>
+  </g>
+  
+  <!-- Right badge: Token ecosystem -->
+  <g transform="translate(320, 30)">
+    <rect x="0" y="0" width="65" height="50" rx="8" fill="url(#badgeGradient)" stroke="#8B5CF6" stroke-width="1" opacity="0.8"/>
+    <text x="32.5" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" 
+          fill="white" letter-spacing="1px">TOKEN</text>
+    <text x="32.5" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" 
+          fill="#C084FC" letter-spacing="0.5px">ECOSYSTEM</text>
+    
+    <!-- Decorative elements -->
+    <circle cx="10" cy="12" r="1" fill="#E879F9" opacity="0.8"/>
+    <circle cx="55" cy="38" r="1.5" fill="#8B5CF6" opacity="0.8"/>
+  </g>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6A409A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="shieldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="corporateGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1F2937;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="dividerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6B7280;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#9CA3AF;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <linearGradient id="x402CorporateGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="badgeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E1B4B;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#3730A3;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+</svg>

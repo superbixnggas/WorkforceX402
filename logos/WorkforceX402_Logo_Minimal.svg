@@ -1,0 +1,71 @@
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="100" fill="transparent"/>
+  
+  <!-- Minimalist X mark -->
+  <g transform="translate(30, 50)">
+    <path d="M-15 -15 L15 15 M-15 15 L15 -15" 
+          stroke="url(#minimalGradient)" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="8" fill="none" stroke="url(#x402Gradient)" stroke-width="2"/>
+    <text x="0" y="3" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" 
+          fill="url(#x402Gradient)">4</text>
+  </g>
+  
+  <!-- Text: WORKFORCE X402 -->
+  <g transform="translate(70, 35)">
+    <!-- WORKFORCE -->
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="28" font-weight="bold" 
+          fill="#F8FAFC" letter-spacing="0.5px">
+      WORKFORCE
+    </text>
+    
+    <!-- X402 with highlight -->
+    <text x="0" y="55" font-family="Arial, sans-serif" font-size="22" font-weight="bold" 
+          fill="url(#minimalX402Gradient)" letter-spacing="1px">
+      X402
+    </text>
+    
+    <!-- Subtle accent line -->
+    <rect x="0" y="60" width="150" height="1" fill="url(#accentGradient)" rx="0.5"/>
+  </g>
+  
+  <!-- Simple badge -->
+  <g transform="translate(220, 25)">
+    <rect x="0" y="0" width="70" height="35" rx="6" fill="none" stroke="url(#badgeStroke)" stroke-width="1.5" opacity="0.8"/>
+    <text x="35" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" 
+          fill="#94A3B8" letter-spacing="1px">AI</text>
+    <text x="35" y="28" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="normal" 
+          fill="#64748B">POWERED</text>
+  </g>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="minimalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8FAFC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E2E8F0;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="x402Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="minimalX402Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#C084FC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6A409A;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <linearGradient id="badgeStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B7280;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#9CA3AF;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,112 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="55" fill="url(#bgGradient)" opacity="0.1"/>
+  <circle cx="60" cy="60" r="54" fill="none" stroke="url(#borderGradient)" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Central icon: Workforce symbol -->
+  <g transform="translate(60, 60)">
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="35" fill="none" stroke="url(#ringGradient)" stroke-width="2" opacity="0.8"/>
+    
+    <!-- Inner pattern: Workforce connectivity -->
+    <g fill="none" stroke="url(#techGradient)" stroke-width="1.5" opacity="0.9">
+      <!-- Central node -->
+      <circle cx="0" cy="0" r="4" fill="url(#coreGradient)" stroke="none"/>
+      
+      <!-- Connectors to outer nodes -->
+      <line x1="0" y1="-15" x2="0" y2="-25"/>
+      <line x1="13" y1="-7.5" x2="22" y2="-12.5"/>
+      <line x1="13" y1="7.5" x2="22" y2="12.5"/>
+      <line x1="0" y1="15" x2="0" y2="25"/>
+      <line x1="-13" y1="7.5" x2="-22" y2="12.5"/>
+      <line x1="-13" y1="-7.5" x2="-22" y2="-12.5"/>
+    </g>
+    
+    <!-- Outer nodes -->
+    <g fill="url(#nodeGradient)" stroke="white" stroke-width="0.5" opacity="0.9">
+      <circle cx="0" cy="-25" r="3"/>
+      <circle cx="22" cy="-12.5" r="3"/>
+      <circle cx="22" cy="12.5" r="3"/>
+      <circle cx="0" cy="25" r="3"/>
+      <circle cx="-22" cy="12.5" r="3"/>
+      <circle cx="-22" cy="-12.5" r="3"/>
+    </g>
+    
+    <!-- X402 badge -->
+    <g transform="translate(15, -15)">
+      <rect x="-12" y="-8" width="24" height="16" rx="3" fill="url(#x402Gradient)" stroke="#8B5CF6" stroke-width="0.5" opacity="0.95"/>
+      <text x="0" y="-2" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white">X402</text>
+    </g>
+    
+    <!-- Additional tech elements -->
+    <g stroke="url(#techGradient)" stroke-width="1" opacity="0.7">
+      <!-- Small circuit traces -->
+      <path d="M-30 -5 Q-25 -10 -20 -5 Q-15 0 -20 5 Q-25 10 -30 5" fill="none"/>
+      <path d="M5 30 Q10 35 15 30 Q20 25 25 30" fill="none"/>
+      <path d="M-35 15 Q-30 20 -25 15 Q-20 10 -25 5" fill="none"/>
+    </g>
+    
+    <!-- Floating data points -->
+    <g fill="url(#dataGradient)" opacity="0.8">
+      <circle cx="-35" cy="-20" r="1.5"/>
+      <circle cx="35" cy="-18" r="1"/>
+      <circle cx="30" cy="25" r="1.5"/>
+      <circle cx="-25" cy="30" r="1"/>
+    </g>
+  </g>
+  
+  <!-- Text below (compact) -->
+  <g transform="translate(60, 105)">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" 
+          fill="url(#textGradient)" letter-spacing="1px">WORKFORCE X402</text>
+  </g>
+  
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#6A409A;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3B1F54;stop-opacity:0.4" />
+    </radialGradient>
+    
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:0.4" />
+    </linearGradient>
+    
+    <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6A409A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C084FC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="coreGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E879F9;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6A409A;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="x402Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="dataGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E879F9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C084FC;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F8FAFC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E2E8F0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
